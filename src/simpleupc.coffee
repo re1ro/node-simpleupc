@@ -8,8 +8,6 @@ ERRORS = require './errors'
 simpleupc.Client = class Client
   constructor: (@auth, version = 1)->
     @url = "http://api.simpleupc.com/v#{version}.php"
-    # TODO: remove after testing
-    @url = "http://localhost:8080/"
 
 
 for method, apiMethod of METHODS
