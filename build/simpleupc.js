@@ -17,7 +17,6 @@ simpleupc.Client = Client = (function() {
       version = 1;
     }
     this.url = "http://api.simpleupc.com/v" + version + ".php";
-    this.url = "http://localhost:8080/";
   }
 
   return Client;
