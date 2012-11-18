@@ -1,0 +1,27 @@
+{
+  "name": "simpleupc",
+  "description": "API wrapper for simpleupc.com",
+  "version": "0.0.1",
+  "author": {
+    "name": "Kiryl Yermakou",
+    "email": "rma4ok@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rma4ok/node-simpleupc.git"
+  },
+  "dependencies": {
+    "ahr2": "2.3.2"
+  },
+  "devDependencies": {
+    "coffee-script": "1.3.3"
+  },
+  "main": "./lib/simpleupc",
+  "scripts": {
+    "test": ""
+  },
+  "engines": {
+    "node": ">= 0.4.0"
+  },
+  "readme": ""
+}
