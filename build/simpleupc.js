@@ -11,11 +11,13 @@ ERRORS = require('./errors');
 
 simpleupc.Client = Client = (function() {
 
-  function Client(auth, version) {
+  function Client(auth, options) {
+    var version;
     this.auth = auth;
-    if (version == null) {
-      version = 1;
+    if (options == null) {
+      options = {};
     }
+    version = options.version || 1;
     this.url = "http://api.simpleupc.com/v" + version + ".php";
   }
 
