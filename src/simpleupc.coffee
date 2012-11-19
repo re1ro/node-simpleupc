@@ -6,7 +6,8 @@ METHODS = require './methods'
 ERRORS = require './errors'
 
 simpleupc.Client = class Client
-  constructor: (@auth, version = 1)->
+  constructor: (@auth, options = {})->
+    version = options.version || 1
     @url = "http://api.simpleupc.com/v#{version}.php"
 
 
