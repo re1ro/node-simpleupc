@@ -33,16 +33,18 @@ _request = (method, params, cb)->
     params
     })
   ).when (err, ahr, data)->
-    _errorHandler err, data, cb
+    _errorHandler err, data, method, cb
     return
 
   return
 
 
-_errorHandler = (err, data, cb)->
+_errorHandler = (err, data, method, cb)->
+  result = data && if method is 'FetchProducts' then data.results else data.result
+
   if data and not data.success
-    cb data.error, data
+    cb data.error, result, data
   else
-    cb err, data
+    cb err, result, data
 
   return
