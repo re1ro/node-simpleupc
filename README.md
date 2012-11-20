@@ -37,7 +37,7 @@ simpleupcClient.productByUPC('036000280753', function(err, product) {
   * `usedExternal` indicates whether an external source (such as Google Shopping API) was used to satisfy the request.
   * `ProductHasImage` indicates whether the product has an associated image. If true, the product's image can be returned using FetchImageByUPC method
   * `ProductHasNutritionFacts` indicates whether the product's information contains nutrition facts. If true, the product's nutrition facts can be returned using FetchNutritionFactsByUPC method
-  * `Duration` - time spent for request
+  * `Duration` - time spent on request
 
 
 ### `products(options, callback)`
@@ -70,7 +70,7 @@ This effect is used in conjunction with the limit parameter, and is similar to p
   * `count` - amount of returned results
   * `nextOffset` - offset that should be used for the next page with the same limit pagination
   * `prevOffset` - offset that should be used for the previous page with the same limit pagination
-  * `Duration` - time spent for request
+  * `Duration` - time spent on request
 
 
 
@@ -80,7 +80,7 @@ This effect is used in conjunction with the limit parameter, and is similar to p
 
 `originalResponse` notes:
   * `usedExternal` indicates whether an external source (such as Google Shopping API) was used to satisfy the request.
-  * `Duration` - time spent for request
+  * `Duration` - time spent on request
  
 
 
@@ -91,7 +91,7 @@ This effect is used in conjunction with the limit parameter, and is similar to p
 
 `originalResponse` notes:
   * `usedExternal` indicates whether an external source (such as Google Shopping API) was used to satisfy the request.
-  * `Duration` - time spent for request
+  * `Duration` - time spent on request
 
 ## See also
 For more information and respond examples please read [original documentation](http://simpleupc.com/api/)
