@@ -3,7 +3,6 @@ ahr2 = require 'ahr2'
 simpleupc = exports
 
 METHODS = require './methods'
-ERRORS = require './errors'
 
 simpleupc.Client = class Client
   constructor: (@auth, options = {})->
@@ -35,6 +34,14 @@ _request = (method, params, cb)->
     params
     })
   ).when (err, ahr, data)->
+    _errorHandler err, data, cb
+
+  return
+
+_errorHandler = (err, data, cb)->
+  if data and not data.success
+    cb data.error, data
+  else
     cb err, data
 
   return
