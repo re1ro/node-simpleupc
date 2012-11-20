@@ -50,14 +50,16 @@ _request = function(method, params, cb) {
       params: params
     })
   }).when(function(err, ahr, data) {
-    _errorHandler(err, data, cb);
+    _errorHandler(err, data, method, cb);
   });
 };
 
-_errorHandler = function(err, data, cb) {
+_errorHandler = function(err, data, method, cb) {
+  var result;
+  result = data && (method === 'FetchProducts' ? data.results : data.result);
   if (data && !data.success) {
-    cb(data.error, data);
+    cb(data.error, result, data);
   } else {
-    cb(err, data);
+    cb(err, result, data);
   }
 };

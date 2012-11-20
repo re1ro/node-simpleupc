@@ -1,7 +1,7 @@
 {
   "name": "simpleupc",
   "description": "API wrapper for simpleupc.com",
-  "version": "0.9.4",
+  "version": "1.0.0",
   "author": {
     "name": "Kiryl Yermakou",
     "email": "rma4ok@gmail.com"
@@ -22,6 +22,5 @@
   },
   "engines": {
     "node": ">= 0.4.0"
-  },
-  "readme": ""
+  }
 }
