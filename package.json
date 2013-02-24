@@ -1,11 +1,19 @@
 {
   "name": "simpleupc",
-  "description": "API wrapper for simpleupc.com",
   "version": "1.0.1",
   "author": {
     "name": "Kiryl Yermakou",
     "email": "rma4ok@gmail.com"
   },
+
+  "description": "API wrapper for simpleupc.com",
+  "keywords": [
+    "api"
+  , "simpleupc"
+  , "barcode"
+  , "upc"
+  ],
+
   "repository": {
     "type": "git",
     "url": "https://github.com/rma4ok/node-simpleupc.git"

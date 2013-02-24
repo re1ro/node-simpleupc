@@ -95,3 +95,17 @@ This effect is used in conjunction with the limit parameter, and is similar to p
 
 ## See also
 For more information and respond examples please read [original documentation](http://simpleupc.com/api/)
+
+
+# Developing
+
+You need to install grunt globally:
+```sh
+$ npm i -g grunt
+```
+
+* Watch coffee:
+
+```sh
+$ grunt
+```
